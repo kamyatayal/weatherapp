@@ -15,6 +15,7 @@ async function checkWeather(city){
         var data= await response.json();
         console.log(data);
         document.querySelector(".date").innerHTML=todayDate.getDate()+"/"+((todayDate.getMonth())+1)+"/"+todayDate.getFullYear();
+        document.querySelector(".updated-on").innerHTML="Updated as of "+todayDate.getHours()+":"+todayDate.getMinutes();
         document.querySelector(".city").innerHTML=data.name;
         document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+"°C";
         document.querySelector(".min-temp").innerHTML=Math.round(data.main.temp_min)+"°C"+"(min)"+" |";
