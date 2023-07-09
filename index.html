@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="shortcut icon" href="img/bg.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="card">
+        <div class="header">
+            <h4>Get Weather</h4>
+        </div>
+        <div class="search">
+            <input type="text" name="" placeholder="enter city name">
+            <button><img src="img/search.jpg" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="img/rain.jpg" class="weather-icon">
+            <div class="date">8 JULY 2023</div>
+            <h1 class="temp">22°C</h1>
+            <div class="min-max-temp">
+                <div class="min-temp"><b>22°C(min) |</b></div>
+                <div class="max-temp"><b>27°C(max)</b></div>
+            </div>
+            <h2 class="city">NEW YORK</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="img/humidity.jpg">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/wind.jpg">
+                    <div>
+                        <p class="wind">15km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/pressure.jpg">
+                        <div>
+                            <p class="pressure">1002 mb</p>
+                            <p>Pressure</p>
+                        </div>
+            </div>
+            </div>
+        </div>
+            
+    </div>
+   
+
+     <script type="module" src="scripts.js"></script>  
+    <!-- font awesome icon cdn  -->
+   
+    <!-- sweetalert cdn........ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
